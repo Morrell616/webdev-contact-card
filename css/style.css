@@ -1,0 +1,113 @@
+@import url("reset.css");
+
+html{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 10px darkgreen;
+    background-color: gray;
+    padding: 20px;
+   } 
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: bisque;
+}
+   
+   .grinch-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid green;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  
+   }
+.title {
+    color: maroon;
+    text-align: center;
+    }
+.profile-pic{
+    border-radius: 50%;
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto 20px;
+
+}
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+}
+.contact-details,.position {
+    color: maroon;
+    background-color: lightgreen;
+    border: 4px solid green;
+    margin: 5px auto;
+    padding: 10px; 
+    flex: 1 1 auto; 
+    box-sizing: border-box;
+
+}
+
+@media (min-width: 500px) {
+    .card{
+        display:flex;
+        flex-direction: column;        
+    }
+.grinch-header{
+    flex-direction: column;
+    justify-content: center;
+}
+
+article {
+    flex-direction: row;
+    justify-content: space-between; 
+    align-content: flex-end;
+    width: 100%;
+    
+}
+.contact-details, .position {
+    justify-content: center;
+    width: 45%;
+    margin: 0 10px;
+}
+@media (min-width: 768px) { 
+.card { 
+    display: flex; 
+    flex-direction: row; 
+     } 
+.grinch-header { 
+        width: 30%; 
+        flex-direction: column; 
+         justify-content: center; } 
+         
+article { 
+    width: 70%; 
+    flex-direction: column; 
+ } 
+ .contact-details, .position { 
+    width: 100%; 
+    justify-content: flex-start; 
+    margin: 5px 0;
+
+
+}
+}
+}
